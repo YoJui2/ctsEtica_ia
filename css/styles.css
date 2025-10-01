@@ -1,0 +1,130 @@
+/* =========================
+   Reset / Base
+   ========================= */
+:root{
+  --primary-blue: #1e3a8a;
+  --primary-light: #60a5fa;
+  --bg-page: #f9fafb;
+  --text-main: #0f172a;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  padding-top: 70px; /* espacio para navbar fijo */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   Navbar (sobrescribir Bootstrap)
+   ========================= */
+/* aplicamos estilo a la barra completa */
+.navbar {
+  background-color: var(--primary-blue) !important; /* !important para asegurar que gane sobre bg-light u otros */
+  transition: background-color .25s ease;
+}
+
+/* marca (logo/iniciales) */
+.navbar .navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+/* links del nav */
+.navbar .nav-link {
+  color: rgba(255,255,255,0.95) !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: rgba(255,255,255,1) !important;
+  text-decoration: underline;
+}
+
+/* sombra sutil */
+.navbar.shadow-sm {
+  box-shadow: 0 2px 8px rgba(18,24,40,0.06);
+}
+
+/* =========================
+   Header principal (portada)
+   ========================= */
+/* usa una clase propia en el HTML: <header class="site-header"> */
+.site-header {
+  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  color: #fff;
+  padding: 3.5rem 1rem;
+  text-align: center;
+}
+
+/* tamaño del título en portada */
+.site-header h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+/* subtítulo */
+.site-header .lead {
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 1rem;
+}
+
+/* bloque de datos (integrantes, materia...) */
+.header-meta {
+  background: rgba(255,255,255,0.06);
+  display: inline-block;
+  padding: .8rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: left; /* forzar izquierda dentro del contenedor centrado */
+}
+
+/* =========================
+   Secciones
+   ========================= */
+section {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+/* listas limpias (sin bullets) para integrntes si lo deseas */
+.list-unstyled.custom-list li {
+  padding: 0.15rem 0;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer.site-footer {
+  background-color: #0f1724;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: .9rem;
+}
+
+/* =========================
+   Responsividad / ajustes menores
+   ========================= */
+@media (max-width: 576px) {
+  .site-header { padding: 2rem 1rem; }
+  .header-meta { padding: .6rem .8rem; font-size: .95rem; }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Relación — Ética en la IA</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Nuestro CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" role="navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Grupo IA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="temas.html">Temas</a></li>
+          <li class="nav-item"><a class="nav-link active" href="relacion.html">Relación</a></li>
+          <li class="nav-item"><a class="nav-link" href="reflexion.html">Reflexión</a></li>
+          <li class="nav-item"><a class="nav-link" href="propuestas.html">Propuestas</a></li>
+          <li class="nav-item"><a class="nav-link" href="fuentes.html">Fuentes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="pt-5">
+    <section class="pt-5 pb-4">
+      <div class="container">
+        <h1 class="mb-3">Relación entre Privacidad de datos e IA en la Salud</h1>
+        <p class="lead">
+          Ambos temas están íntimamente vinculados: la IA en salud necesita datos —a menudo altamente sensibles— para entrenar modelos y ofrecer valor clínico. Por ello, las decisiones sobre cómo se recolectan, almacenan y usan esos datos afectan directamente la seguridad, la equidad y la confianza en las soluciones de salud basadas en IA.
+        </p>
+      </div>
+    </section>
+
+    <section class="pt-3 pb-4 bg-light">
+      <div class="container">
+        <h2>¿Cómo se conectan?</h2>
+        <ul>
+          <li><strong>Datos sensibles como insumo:</strong> Para tareas clínicas (diagnóstico por imágenes, predicción de riesgo) se requieren historiales, imágenes médicas y registros que pueden revelar información íntima.</li>
+          <li><strong>Valor vs. riesgo:</strong> Cuanto más ricos sean los datos (longitud temporal, etiquetas clínicas), mayor será la utilidad del modelo, pero también crece el riesgo de reidentificación o uso indebido.</li>
+          <li><strong>Interdependencia técnica y legal:</strong> Las prácticas de anonimización, consentimiento y gobernanza determinan si un proyecto de IA en salud es viable o éticamente aceptable.</li>
+          <li><strong>Infraestructura compartida:</strong> Plataformas, APIs y proveedores cloud que alojan datos y modelos generan puntos únicos de fallo y responsabilidad.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pt-4 pb-4">
+      <div class="container">
+        <h2>Riesgos éticos principales</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Privacidad y confidencialidad</h5>
+            <p>
+              La exposición de historiales médicos puede generar discriminación (seguros, empleo) y daño reputacional. La pseudonimización no siempre evita la reidentificación cuando se combinan múltiples fuentes.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h5>Sesgos y equidad</h5>
+            <p>
+              Si los datos de entrenamiento no representan a grupos diversos, los modelos pueden fallar en poblaciones minoritarias, agravando desigualdades en salud y acceso a tratamientos adecuados.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <h5>Responsabilidad y supervisión</h5>
+            <p>
+              Determinar quién responde si una recomendación automatizada causa daño (desarrollador, clínica, proveedor del modelo) es complejo y requiere marcos regulatorios y contratos claros.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h5>Seguridad y ataques</h5>
+            <p>
+              Sistemas de IA y sus datos son objetivos valiosos: accesos no autorizados, manipulación de modelos (poisoning) o exfiltración de datos representan amenazas reales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-4 pb-4 bg-light">
+      <div class="container">
+        <h2>Impacto en la sociedad</h2>
+        <p>
+          La adopción de IA en salud puede aumentar la eficiencia y salvar vidas, pero también puede erosionar la confianza pública si hay incidentes de privacidad o decisiones percibidas como injustas. La pérdida de confianza reduce la disposición a compartir datos, lo que a su vez limita la investigación y el desarrollo de mejores soluciones médicas.
+        </p>
+
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <h6>Confianza</h6>
+            <p class="small mb-0">Necesidad de transparencia y explicabilidad para que pacientes y profesionales confíen en las herramientas.</p>
+          </div>
+          <div class="col-md-4">
+            <h6>Acceso</h6>
+            <p class="small mb-0">Riesgo de brecha digital: comunidades con menos datos o infraestructura quedan fuera de beneficios.</p>
+          </div>
+          <div class="col-md-4">
+            <h6>Normativa</h6>
+            <p class="small mb-0">Políticas públicas y regulaciones determinan límites y obligaciones para proyectos que manejan datos de salud.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-4 pb-5">
+      <div class="container">
+        <h2>Impacto en el trabajo profesional</h2>
+        <p>
+          La integración de IA en el ámbito sanitario transforma roles y responsabilidades:
+        </p>
+        <ul>
+          <li><strong>Médicos:</strong> necesitarán formación para interpretar y supervisar recomendaciones algorítmicas y para comunicar sus limitaciones a pacientes.</li>
+          <li><strong>Ingenieros y científicos de datos:</strong> deberán priorizar diseño ético, auditorías de sesgo y técnicas de privacidad (differential privacy, federated learning, etc.).</li>
+          <li><strong>Gestores y administradores:</strong> exigirán marcos de gobernanza, contratos y evaluaciones de impacto en privacidad antes de adoptar tecnologías.</li>
+          <li><strong>Abogados y reguladores:</strong> deberán actualizar marcos legales para asignar responsabilidades y proteger derechos de los pacientes.</li>
+        </ul>
+
+        <div class="alert alert-primary mt-3" role="alert">
+          <strong>Resumen:</strong> La eficacia de la IA en salud depende tanto de la calidad técnica de los modelos como de las decisiones éticas y de gobernanza sobre los datos. Ignorar la privacidad o la equidad puede convertir soluciones prometedoras en riesgos reales para pacientes y comunidades.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">© 2025 Grupo IA – Proyecto Ética en IA</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
